@@ -34,7 +34,9 @@ export async function GET(req: NextRequest) {
 
 		const filename = `${nanoid()}.png`
 
-		const blob = new Blob([screenshotBuffer], { type: "image/png" })
+		const blob = new Blob([screenshotBuffer.buffer as ArrayBuffer], {
+			type: "image/png"
+		})
 
 		return new Response(blob, {
 			status: 200,
