@@ -1,0 +1,28 @@
+{
+  "name": "community-apps",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:image-to-text": "npm run dev -w @community-apps/image-to-text",
+    "dev:qr-code-generator": "npm run dev -w @community-apps/qr-code-generator",
+    "dev:radio": "npm run dev -w @community-apps/radio",
+    "dev:sets": "npm run dev -w @community-apps/sets",
+    "dev:zen": "npm run dev -w @community-apps/zen"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fefade/community-apps.git"
+  },
+  "author": "fefade <https://github.com/fefade>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fefade/community-apps/issues"
+  },
+  "homepage": "https://github.com/fefade/community-apps#readme"
+}
